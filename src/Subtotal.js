@@ -13,6 +13,8 @@ function Subtotal() {
             renderText={(value) =>(
                 <>
                     <p>
+                        
+                        {/* Part of the homework */}
                         Subtotal ({basket.length} items):
                         <strong>{value}</strong>
                     </p>
@@ -22,7 +24,7 @@ function Subtotal() {
                 </>
             )}
             decimalScale={2}
-            value={getBasketTotal(basket)}
+            value={getBasketTotal(basket)} // Part of the homework
             displayType={"text"}
             thousandsSeparator={true}
              prefix={'Rs.'}
